@@ -1,6 +1,6 @@
 {
   "name": "slight",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "author": "Alex Angelini <alex.louis.angelini@gmail.com>",
   "main": "server",
   "engines": {
@@ -11,5 +11,6 @@
   },
   "scripts": {
     "start": "server.js"
-  }
+  },
+  "subdomain": "slight"
 }
