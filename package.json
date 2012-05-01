@@ -1,0 +1,15 @@
+{
+  "name": "slight",
+  "version": "0.0.1",
+  "author": "Alex Angelini <alex.louis.angelini@gmail.com>",
+  "main": "server",
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {
+    "tako": "0.2.x"
+  },
+  "scripts": {
+    "start": "server.js"
+  }
+}
