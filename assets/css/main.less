@@ -2,6 +2,7 @@
 
 @darkblue: rgb(3, 67, 106);
 @lightblue: rgb(100, 168, 209);
+@lightbluealpha: rgba(100, 168, 209, 0.8);
 @greybg: rgb(245, 245, 245);
 @min: 1200px;
 
@@ -65,13 +66,14 @@ body {
 
 .tagline {
   background-color: @greybg;
-  color: @lightblue;
+  color: @lightbluealpha;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 60px;
   padding: 20px 0;
   font-weight: bold;
   .border-radius;
+  .inset-text(@greybg, black);
 }
 
 .about {
@@ -154,4 +156,8 @@ body {
   box-shadow: @arguments;
   -moz-box-shadow: @arguments;
   -webkit-box-shadow: @arguments;
+}
+
+.inset-text (@back, @shadow) {
+  text-shadow: 1px 4px 6px @back, 0 0 0 @shadow, 1px 4px 6px @back;
 }
